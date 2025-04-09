@@ -1,6 +1,7 @@
 ---
 - name: create file
   hosts: server2.example.com
+  become: yes
   
   tasks:
   - name: Creating an empty file
