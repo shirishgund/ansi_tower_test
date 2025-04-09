@@ -1,8 +1,6 @@
 ---
 - name: create file
   hosts: localhost
-  gather_facts: no
-  become: yes
   
   tasks:
   - name: Creating an empty file
