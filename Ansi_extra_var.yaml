@@ -1,0 +1,11 @@
+---
+- name: create file
+  hosts: server1.example.com
+  become: yes
+    
+  tasks:
+  - name: Creating an empty file
+    file:
+      path: "/tmp/{{deploy}}.txt"
+      state: touch
+      mode: '0644'
