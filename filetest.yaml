@@ -1,12 +1,11 @@
 ---
 - name: create file
-  hosts: server2.example.com
+  hosts: server1.example.com
   become: yes
-  become_method: sudo
-  
+    
   tasks:
   - name: Creating an empty file
     file:
-      path: "/tmp/roman.txt"
+      path: "/tmp/welcome.txt"
       state: touch
       mode: '0644'
