@@ -6,6 +6,6 @@
   tasks:
   - name: Creating an empty file
     file:
-      path: "/tmp/{{deploy}}.txt"
+      path: "/tmp/{{ deploy }}.txt"
       state: touch
       mode: '0644'
