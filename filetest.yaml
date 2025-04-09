@@ -1,6 +1,6 @@
 ---
 - name: create file
-  hosts: localhost
+  hosts: server2.example.com
   
   tasks:
   - name: Creating an empty file
