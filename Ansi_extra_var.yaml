@@ -13,8 +13,8 @@
   - name: Show file created
     debug:
       msg: "{{ command_output.stdout }}"
-  - name: Hostname
-    shell: hostname
+  - name: uname
+    shell: uname
     register: command
   - name: Display hostname
     debug:
