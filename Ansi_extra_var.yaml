@@ -10,6 +10,7 @@
   - name: Display file created
     shell: ls -lrt
     register: command_output
+  - name: Show file created
     debug:
       msg: "{{ command_output.stdout }}"
   - name: Hostname
