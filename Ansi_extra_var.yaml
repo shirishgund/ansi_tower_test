@@ -8,10 +8,15 @@
       state: touch
       mode: '0644'
   - name: Display file created
-    shell: ls -lrt
+    shell: ls -lrt /tmp
     register: command_output
   - name: Show file created
     debug:
       msg: "{{ command_output.stdout }}"
   - name: Hostname
     shell: hostname
+    register: command
+  - name: Display hostname
+    debug:
+      msg: "{{ command.stdout }}"
+    
