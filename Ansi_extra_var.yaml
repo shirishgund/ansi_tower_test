@@ -7,3 +7,7 @@
       path: "/tmp/{{ deploy }}.txt"
       state: touch
       mode: '0644'
+  - name: Display file created
+    shell: ls -lrt
+  - name: Hostname
+    shell: hostname
