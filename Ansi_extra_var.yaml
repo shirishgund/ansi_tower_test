@@ -1,6 +1,8 @@
 ---
 - name: create file
   hosts: server2.example.com
+  become: yes
+  become_user: shirish
   tasks:
   - name: Creating an empty file
     file:
