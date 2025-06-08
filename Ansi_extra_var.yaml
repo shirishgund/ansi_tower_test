@@ -2,7 +2,8 @@
 - name: create file
   hosts: server2.example.com
   become: yes
-    
+  become_method: sudo
+  become_user: root    
   tasks:
   - name: Creating an empty file
     file:
