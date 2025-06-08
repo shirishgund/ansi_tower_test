@@ -4,7 +4,7 @@
   tasks:
   - name: Creating an empty file
     file:
-      path: "/tmp/{{ deploy }}.txt"
+      path: "/home/shirish/{{ deploy }}.txt"
       state: touch
       mode: '0644'
   - name: Display file created
