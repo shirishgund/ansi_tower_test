@@ -9,5 +9,8 @@
       mode: '0644'
   - name: Display file created
     shell: ls -lrt
+    register: command_output
+    debug:
+      msg: "{{ command_output.stdout }}"
   - name: Hostname
     shell: hostname
