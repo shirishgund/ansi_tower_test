@@ -11,7 +11,7 @@
   - name: Fail if file exist
     fail:
        msg: "Fil already exists"
-     when: file_status.stat.exists      
+    when: file_status.stat.exists      
   - name: Creating an empty file
     file:
       path: "/tmp/welcome.txt"
