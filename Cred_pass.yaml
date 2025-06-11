@@ -4,4 +4,4 @@
   tasks:
     - name: Use credential
       debug:
-        msg: "Username: {{ my_username }}, Password: {{ my_password }}"
+        msg: "Username: {{ username }}, Password: {{ password }}"
