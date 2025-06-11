@@ -1,0 +1,7 @@
+---
+- name: Print username
+  hosts: server1.example.com
+  tasks:
+    - name: Use credential
+      debug:
+        msg: "Username: {{ my_username }}, Password: {{ my_password }}"
